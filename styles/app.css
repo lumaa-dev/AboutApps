@@ -1,0 +1,199 @@
+:root {
+	--discord-width: 30vw;
+	--discord-height: 10vh;
+}
+
+.app {
+	text-align: center;
+	max-width: 100vw;
+}
+
+.appicon,
+.present img {
+	border-radius: 22%;
+	width: 20vw;
+	margin: 2vh;
+}
+
+.app.soon .present img {
+	width: 7vw;
+}
+
+.appicon,
+.present img.no-radius {
+	border-radius: 0;
+}
+
+.app h1,
+.present .title {
+	font-size: 4.5em;
+	margin: 10px;
+}
+
+.details {
+	font-size: 16px;
+	text-align: justify;
+	padding: 0 8em;
+	padding-top: 5em;
+}
+
+.return {
+	margin: 1em 0 5em 0;
+}
+
+.present .caption {
+	text-align: center;
+}
+
+.picker {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	padding: 2em 0;
+}
+
+.picker button {
+	border: none;
+	color: inherit;
+	font-family: var(--apple-sf);
+	background: none;
+	cursor: pointer;
+	font-size: 2em;
+	padding: 1.5vh 5vh;
+	border-radius: 8px;
+	transition: 0.25s background var(--apple-spring);
+}
+
+.picker button:hover {
+	background: var(--apple-bg-tertiary-l);
+}
+
+.picker button.selected {
+	background: var(--apple-bg-secondary-l) !important;
+}
+
+.gallery {
+	overflow: hidden hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 7em 0;
+}
+
+.gallery.h {
+	/* Horizontal Gallery */
+	overflow: auto hidden;
+	justify-content: left;
+}
+
+.gallery img {
+	height: 60vh;
+	padding: 20px 1em;
+}
+
+.present p.appstore {
+	font-size: 3em;
+	text-align: center;
+	padding: 1em 0;
+	font-weight: 700;
+}
+
+.app .appstore img {
+	height: 6em;
+	margin: 2em;
+}
+
+.center {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	align-items: center;
+}
+
+.discord {
+	width: var(--discord-width);
+	min-height: var(--discord-height);
+	border: 1px solid #ffffff66;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 15px;
+	background: linear-gradient(var(--discord-blurple-shade1), var(--discord-blurple-shade2));
+	gap: 15px;
+	padding: 30px 10px;
+}
+
+.discord p {
+	background-image: linear-gradient(180deg, var(--discord-text-shade1), var(--discord-text-shade2));
+	background-clip: text;
+	color: transparent;
+}
+
+.discord > img {
+	width: calc(var(--discord-width) / 5);
+}
+
+.discord .appname {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.discord .caption {
+	font-size: 1em;
+	text-align: justify;
+	margin: 0 5px;
+}
+
+.discord .action {
+	padding: 20px 30px;
+	background: var(--discord-blurple);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	margin: 10px 0;
+}
+
+.discord .action:hover {
+	filter: brightness(0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+	.picker button:hover {
+		background: var(--apple-bg-tertiary-d);
+	}
+
+	.picker button.selected {
+		background: var(--apple-bg-secondary-d) !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	:root  {
+		--discord-width: 85vw;
+	}
+	.app.soon .present img {
+		width: 20vw;
+	}
+
+	.present p {
+		font-size: 16px;
+		text-align: justify;
+		padding: 0 4vh;
+	}
+
+	.details {
+		padding: 0 1.5em;
+		padding-top: 5em;
+	}
+
+	.appicon,
+	.present img {
+		width: 40vw;
+	}
+}

@@ -1,0 +1,74 @@
+.present {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 35vh;
+	background: var(--apple-bg-tertiary-l);
+}
+
+.present img {
+	height: 15vh;
+	margin: 1em;
+}
+
+.present p {
+	font-family: var(--apple-sf-bold);
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.apps {
+	padding-top: 10vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.app {
+	opacity: 0;
+	padding: 3em;
+	display: grid;
+	width: 50vw;
+	justify-content: center;
+	justify-items: center;
+	gap: 1em;
+	animation: onAppear 2s ease-out 0.35s 1 forwards;
+}
+
+.app .icon {
+	width: 150px;
+	/* border-radius: 17.544%; */
+	border-radius: 22%;
+}
+
+.app .name {
+	font-size: 5vh;
+}
+
+@media screen and (max-width: 900px) {
+	.app {
+		width: 100vw;
+	}
+}
+
+@keyframes onAppear {
+	from {
+		opacity: 0;
+		transform: translateX(100);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+	.present {
+		background: var(--apple-bg-tertiary-d);
+	}
+}

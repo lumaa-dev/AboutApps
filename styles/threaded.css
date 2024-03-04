@@ -1,0 +1,69 @@
+:root {
+    --th-gray: rgba(255, 255, 255, 0.3);
+    --discord-blurple: #5a66f5;
+    --discord-blurple-shade1: rgba(90, 103, 245, 0.3);
+    --discord-blurple-shade2: rgba(90, 103, 245, 0.15);
+    --discord-text-shade1: #d7d9fb;
+    --discord-text-shade2: #dcddff;
+}
+
+body {
+    background: #101010;
+    color: #fff !important;
+}
+
+sup {
+    color: var(--th-gray);
+}
+
+.app {
+    padding-top: 5vh;
+}
+
+/* t-scroll */
+
+.t-scroll {
+    height: 300vh;
+    overflow: hidden !important;
+    margin: 3vh 0;
+}
+
+.t-scroll .mover {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.t-scroll img {
+    width: 10em;
+}
+
+.t-scroll .labels {
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    cursor: default;
+    position: relative;
+}
+
+.t-scroll .labels > * {
+    opacity: 0;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-out;
+}
+
+.t-scroll .labels > .show {
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+@media (prefers-color-scheme: dark) {
+	.footer {
+        color: #fff;
+	}
+}
