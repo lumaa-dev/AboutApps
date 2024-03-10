@@ -11,13 +11,8 @@ window.onload = () => {
 
 	let elmsMaxDrag = iconZone.clientHeight - logo.clientHeight;
 
-	let gallery = document.getElementById("appear");
-
 	mover.style.top = `${window.innerHeight / 2 - logo.clientHeight}px`;
 	logo.style.transform = `scale(1)`;
-
-	const galleryAnimatic = new Animatic(gallery);
-	galleryAnimatic.appearPrefab();
 
 	const iconAnimatic = new Animatic(iconZone);
 	iconAnimatic.onScroll = (scroll) => {
