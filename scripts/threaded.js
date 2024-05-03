@@ -74,7 +74,20 @@ function signUp() {
 
 	xhr.addEventListener("readystatechange", function () {
 		if (this.readyState === 4) {
-			console.log(this.responseText);
+			let json = JSON.parse(this.responseText);
+			if (json["success"] == false) {
+				let messageEl = document.querySelector(".signup > .message")
+				messageEl.style.color = "rgb(255, 69, 58)";
+				messageEl.style.display = "initial";
+				messageEl.innerText = json["error"];
+				console.error(json["error"]);
+			} else {
+				let messageEl = document.querySelector(".signup > .message")
+				messageEl.style.color = "rgb(48, 209, 88)";
+				messageEl.style.display = "initial";
+				messageEl.innerText = "Thank you for signing up!";
+				console.log("Signed up");
+			}
 		}
 	});
 
