@@ -91,7 +91,7 @@ function signUp() {
 		}
 	});
 
-	xhr.open("POST", "http://localhost:3000/sub/join");
+	xhr.open("POST", "https://api.lumaa.fr/sub/join");
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 	xhr.send(data);
