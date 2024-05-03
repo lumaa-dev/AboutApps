@@ -6,7 +6,7 @@ Visit [apps.lumaa.fr](https://apps.lumaa.fr/) for more info
 - [Threaded](https://apps.lumaa.fr/app/threaded) - Light Mastodon client 
 - [Secret Project](https://apps.lumaa.fr/app/secret)...
 
-# [Privacy](./PRIVACY)
+# [Privacy](./PRIVACY.md)
 Visit [apps.lumaa.fr/legal/privacy](https://apps.lumaa.fr/legal/privacy) and select an app for more info
 
 ## Excluded Content
