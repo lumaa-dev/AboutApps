@@ -64,9 +64,9 @@ function signUp() {
 	const emailEl = document.querySelector("input[type='email']");
 	let email = emailEl.value
 
-	if (!email.match(/^[\w-]+(\.[\w-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,})$/g)) {
-		return console.error("Content is not email")
-	}
+	// if (!email.match(/^[\w-]+(\.[\w-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,})$/g)) {
+	// 	return console.error("Content is not email")
+	// }
 
 	var data = `service=Threaded&email=${email}`;
 
