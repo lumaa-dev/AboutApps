@@ -5,11 +5,6 @@ window.onbeforeunload = function () {
 window.onload = () => {
 	window.scrollTo(0, 0);
 
-	let signButton = document.querySelector(".signup > button");
-	signButton.onclick = () => {
-		signUp()
-	}
-
 	let iconZone = document.querySelector(".t-scroll");
 	let mover = document.querySelector(".t-scroll .mover");
 	let logo = document.querySelector(".t-scroll img");
@@ -59,40 +54,3 @@ window.onload = () => {
 		}
 	};
 };
-
-function signUp() {
-	const emailEl = document.querySelector("input[type='email']");
-	let email = emailEl.value
-
-	// if (!email.match(/^[\w-]+(\.[\w-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,})$/g)) {
-	// 	return console.error("Content is not email")
-	// }
-
-	var data = `service=Threaded&email=${email}`;
-
-	var xhr = new XMLHttpRequest();
-
-	xhr.addEventListener("readystatechange", function () {
-		if (this.readyState === 4) {
-			let json = JSON.parse(this.responseText);
-			if (json["success"] == false) {
-				let messageEl = document.querySelector(".signup > .message")
-				messageEl.style.color = "rgb(255, 69, 58)";
-				messageEl.style.display = "initial";
-				messageEl.innerText = json["error"];
-				console.error(json["error"]);
-			} else {
-				let messageEl = document.querySelector(".signup > .message")
-				messageEl.style.color = "rgb(48, 209, 88)";
-				messageEl.style.display = "initial";
-				messageEl.innerText = "Thank you for signing up!";
-				console.log("Signed up");
-			}
-		}
-	});
-
-	xhr.open("POST", "https://api.lumaa.fr/sub/join");
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-	xhr.send(data);
-}
