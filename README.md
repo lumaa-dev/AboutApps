@@ -7,9 +7,11 @@ Visit [apps.lumaa.fr](https://apps.lumaa.fr/) for more info
 - [NumMemory](https://apps.lumaa.fr/app/nummemory) - Guess a number of your choice, but only once a day
 - [Secret Project](https://apps.lumaa.fr/app/secret)...
 
-# [Privacy](./PRIVACY.md)
-Visit [apps.lumaa.fr/legal/privacy](https://apps.lumaa.fr/legal/privacy) and select an app for more info
+# Legal
+Visit [apps.lumaa.fr/legal/privacy](https://apps.lumaa.fr/legal/privacy) and select an app for more info to read the Privacy Policy\
+Visit [apps.lumaa.fr/legal/copyright](https://apps.lumaa.fr/legal/copyright) to know more about Copyrighted content from Lumaa
 
 ## Excluded Content
 - Fonts
 - Official Apple mocks
+- Copyrighted content
