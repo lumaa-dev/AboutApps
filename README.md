@@ -9,7 +9,7 @@ Visit [apps.lumaa.fr](https://apps.lumaa.fr/) for more info
 
 # Legal
 Visit [apps.lumaa.fr/legal/privacy](https://apps.lumaa.fr/legal/privacy) and select an app for more info to read the Privacy Policy\
-Visit [apps.lumaa.fr/legal/copyright](https://apps.lumaa.fr/legal/copyright) to know more about Copyrighted content from Lumaa
+Visit [apps.lumaa.fr/legal/copyrights](https://apps.lumaa.fr/legal/copyrights) to know more about Copyrighted content from Lumaa
 
 ## Excluded Content
 - Fonts
