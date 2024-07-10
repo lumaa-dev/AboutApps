@@ -1,12 +1,5 @@
 :root {
     --th-gray: rgba(255, 255, 255, 0.3);
-    --discord-blurple: #5a66f5;
-
-    --discord-blurple-shade1: rgba(90, 103, 245, 0.3);
-    --discord-blurple-shade2: rgba(90, 103, 245, 0.15);
-
-    --discord-text-shade1: #d7d9fb;
-    --discord-text-shade2: #dcddff;
 }
 
 body {

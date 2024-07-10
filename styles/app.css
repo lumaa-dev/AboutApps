@@ -1,6 +1,30 @@
 :root {
-	--discord-width: 30vw;
-	--discord-height: 10vh;
+	--platform-width: 25vw;
+	--platform-height: 30vh;
+
+	--discord-blurple: #5a66f5;
+
+    --discord-blurple-shade1: rgba(90, 103, 245, 0.3);
+    --discord-blurple-shade2: rgba(90, 103, 245, 0.15);
+
+    --discord-text-shade1: #d7d9fb;
+    --discord-text-shade2: #dcddff;
+
+	--matrix-meadow: #0dbd8b;
+
+	--matrix-meadow-shade1: rgba(13, 189, 139, 0.3);
+	--matrix-meadow-shade2: rgba(13, 189, 139, 0.15);
+
+	--matrix-text-shade1: #c5eee4;
+	--matrix-text-shade2: #c9f4e7;
+
+	--lemmy-accent: #66d7ba;
+
+	--lemmy-accent-shade1: rgba(102, 215, 186, 0.3);
+	--lemmy-accent-shade2: rgba(102, 215, 186, 0.15);
+
+	--lemmy-text-shade1: #c5eee4;
+	--lemmy-text-shade2: #c9f4e7;
 }
 
 .app {
@@ -115,52 +139,94 @@
 	align-items: center;
 }
 
-.discord {
-	width: var(--discord-width);
-	min-height: var(--discord-height);
+.platforms {
+	display: flex;
+	gap: 2vw;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.platform {
+	width: var(--platform-width);
+	height: var(--platform-height);
 	border: 1px solid #ffffff66;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
 	border-radius: 15px;
-	background: linear-gradient(var(--discord-blurple-shade1), var(--discord-blurple-shade2));
 	gap: 15px;
 	padding: 30px 10px;
 }
 
-.discord p {
-	background-image: linear-gradient(180deg, var(--discord-text-shade1), var(--discord-text-shade2));
+.platform p {
 	background-clip: text;
 	color: transparent;
 }
 
-.discord > img {
-	width: calc(var(--discord-width) / 5);
+.platform > img {
+	height: calc(var(--platform-width) / 7);
 }
 
-.discord .appname {
+.platform .appname {
 	font-size: 1.5em;
 	font-weight: 700;
 }
 
-.discord .caption {
+.platform .caption {
 	font-size: 1em;
 	text-align: justify;
 	margin: 0 5px;
 }
 
-.discord .action {
+.platform .action {
 	padding: 20px 30px;
-	background: var(--discord-blurple);
 	color: #fff;
 	text-decoration: none;
 	border-radius: 15px;
 	margin: 10px 0;
 }
 
-.discord .action:hover {
+.platform .action:hover {
 	filter: brightness(0.9);
+}
+
+/* platforms in question */
+
+.discord {
+	background: linear-gradient(var(--discord-blurple-shade1), var(--discord-blurple-shade2));
+}
+
+.discord p {
+	background-image: linear-gradient(180deg, var(--discord-text-shade1), var(--discord-text-shade2));
+}
+
+.discord .action {
+	background: var(--discord-blurple);
+}
+
+.matrix {
+	background: linear-gradient(var(--matrix-meadow-shade1), var(--matrix-meadow-shade2));
+}
+
+.matrix p {
+	background-image: linear-gradient(180deg, var(--matrix-text-shade1), var(--matrix-text-shade2));
+}
+
+.matrix .action {
+	background: var(--matrix-meadow);
+}
+
+.lemmy {
+	background: linear-gradient(var(--lemmy-accent-shade1), var(--lemmy-accent-shade2));
+}
+
+.lemmy p {
+	background-image: linear-gradient(180deg, var(--lemmy-text-shade1), var(--lemmy-text-shade2));
+}
+
+.lemmy .action {
+	background: #565656;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -175,7 +241,7 @@
 
 @media screen and (max-width: 900px) {
 	:root  {
-		--discord-width: 85vw;
+		--platform-width: 85vw;
 	}
 	.app.soon .present img {
 		width: 20vw;
@@ -195,5 +261,10 @@
 	.appicon,
 	.present img {
 		width: 40vw;
+	}
+
+	.platforms {
+		gap: 4vw;
+		flex-direction: column;
 	}
 }
