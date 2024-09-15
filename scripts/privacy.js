@@ -37,7 +37,7 @@ function qtoint(params) {
 	var keep = 0;
 	if (params.has("app")) {
 		let param = params.get("app");
-		if (param.toLowerCase() == "threaded") {
+		if (param.toLowerCase() == "threaded" || param.toLowerCase() == "bubble") {
 			keep = 1;
 		} else if (param.toLowerCase() == "artisticly") {
 			keep = 2;

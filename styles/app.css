@@ -148,7 +148,7 @@
 
 .platform {
 	width: var(--platform-width);
-	height: var(--platform-height);
+	min-height: var(--platform-height);
 	border: 1px solid #ffffff66;
 	display: flex;
 	align-items: center;
