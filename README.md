@@ -6,6 +6,7 @@ Visit [apps.lumaa.fr](https://apps.lumaa.fr/) for more info
 - [Bubble](https://apps.lumaa.fr/app/bubble) - Light Mastodon client 
 - [NumMemory](https://apps.lumaa.fr/app/nummemory) - Guess a number of your choice, but only once a day
 - [Artisticly](https://apps.lumaa.fr/app/artisticly) - Create your own music library, by scrapping songs off of Spotify or by upload songs yourself
+- [Fraca](https://apps.lumaa.fr/app/fraca) - Un lien franco-québécois sur tous vos appareils Apple
 - [Secret Project](https://apps.lumaa.fr/app/secret)...
 
 # Legal
