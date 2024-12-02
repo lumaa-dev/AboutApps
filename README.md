@@ -17,6 +17,7 @@ Visit [apps.lumaa.fr/legal/ai](https://apps.lumaa.fr/legal/ai) to know about art
 Visit [apps.lumaa.fr/legal/threaded](https://apps.lumaa.fr/legal/threaded) to know more about the Threaded name change, due to a legal action from Instagram, LLC.
 
 ## Excluded Content
+This repository contains the full website, except these elements:
 - Fonts
 - Official Apple mocks
 - Copyrighted content
