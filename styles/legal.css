@@ -16,12 +16,12 @@
 }
 
 .text {
-	padding: 1em 2em;
+	padding: 3em 15em;
 	text-align: justify;
 }
 
 .text h1 {
-	padding: 0.5em 0;
+	padding: 0.2em 0;
 	text-align: left;
 }
 
@@ -75,6 +75,11 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
+	.text {
+		padding: 1em 2em;
+		text-align: justify;
+	}
+
 	.apps {
 		text-align: center;
 	}
