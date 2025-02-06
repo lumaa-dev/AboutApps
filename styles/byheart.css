@@ -93,8 +93,6 @@ a, sup {
     gap: 1vw;
 }
 
-@media (prefers-color-scheme: dark) {
-	.footer {
-        color: #fff;
-	}
+.footer {
+    color: #fff;
 }
