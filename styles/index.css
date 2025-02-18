@@ -123,6 +123,11 @@
 		border-radius: calc(17.6px + 1.5em);
 	}
 
+	.apps .list .app {
+		padding: 1em;
+		gap: 20px;
+	}
+
 	.apps .list .app .icon {
 		width: 80px;
 		height: 80px;
@@ -130,16 +135,18 @@
 
 	.apps .list .app .name {
 		font-size: 3vh;
+		width: 20vw;
 	}
 
 	.apps .list .app a {
-		width: calc(90vw - 35vw - 80px - 9em);
+		width: calc(90vw - 20vw - 80px - 4em);
 	}
 }
 
 @media screen and (max-width: 1100px) {
 	.app {
 		width: 100vw !important;
+		height: unset !important;
 	}
 
 	.app.wide {
