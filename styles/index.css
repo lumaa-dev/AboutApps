@@ -124,6 +124,7 @@
 	}
 
 	.apps .list .app {
+		width: calc(100vw - 2em - 20px);
 		padding: 1em;
 		gap: 20px;
 	}
@@ -144,12 +145,12 @@
 }
 
 @media screen and (max-width: 1100px) {
-	.app {
+	.app:not(.list .app) {
 		width: 100vw !important;
 		height: unset !important;
 	}
 
-	.app.wide {
+	.app.wide:not(.list .app) {
 		width: 100vw !important;
 	}
 }
