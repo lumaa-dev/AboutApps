@@ -8,7 +8,7 @@ Visit [apps.lumaa.fr](https://apps.lumaa.fr/) for more info
 - [Artisticly](https://apps.lumaa.fr/app/artisticly) - Create your own music library, by scrapping songs off of Spotify or by upload songs yourself
 - [Fraca](https://d.lumaa.fr/fraca) - A French-Quebec bridge on all Apple devices / Un lien franco-québécois sur tous vos appareils Apple
 - WidgAround - A fully customizable widget app for iOS
-- [**Record Link**](https://apps.lumaa.fr/app/recordlink) - 
+- [**Record Link**](https://apps.lumaa.fr/app/recordlink) - Record Link is an upcoming service to allow every one to share music whatever the platform you use.
 - [Secret Project](https://apps.lumaa.fr/app/secret)...
 
 # Legal & Info
