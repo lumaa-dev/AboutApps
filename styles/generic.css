@@ -91,6 +91,42 @@ input[type="text"]:focus, input[type="email"]:focus {
 	border: 7.5px var(--apple-blue-l) solid;
 }
 
+.card-container {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	gap: 10vw;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+}
+
+.card-container img {
+	height: 70vh;
+}
+
+.card-container .card {
+	background: #ffffff1c;
+	padding: 1em 2em;
+	border-radius: 15px;
+	width: 40vw;
+	text-align: left;
+}
+
+.card-container .card .title {
+	font-size: 37px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.card-container .card .description {
+	font-size: 21px;
+}
+
+.card-container .card img {
+	height: 37px;
+}
+
 .logout {
 	color: var(--apple-red-l);
 }
