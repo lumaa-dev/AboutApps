@@ -1,4 +1,4 @@
-// Made by © Lumaa 2023-2024
+// Made by © Lumaa 2023-2025
 
 /**
  * The Animatic class, allows native scroll animations
