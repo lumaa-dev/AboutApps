@@ -1,6 +1,13 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 :root {
     --th-gray: rgba(255, 255, 255, 0.3);
     --bbl-gradient: linear-gradient(45deg, rgba(180,58,177,1) 0%, rgba(170,55,189,1) 20%, rgba(72,156,214,1) 40%, rgba(235,142,88,1) 60%, rgba(208,195,40,1) 80%, rgba(69,248,252,1) 100%);
+    --bbl-gradient-alt: conic-gradient(from var(--gradient-angle), rgba(180,58,177,1), rgba(170,55,189,1), rgba(72,156,214,1), rgba(235,142,88,1), rgba(208,195,40,1), rgba(69,248,252,1), rgba(180,58,177,1));
     --gradient-mask: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),linear-gradient(white,white);
 
     --mask-top: linear-gradient(to top, #fff 0%, #ffffff00 50%);
@@ -29,7 +36,7 @@ sup {
     justify-content: center;
     gap: 10vw;
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
 }
 
 .app .mark {
@@ -54,7 +61,7 @@ sup {
 
 .card-container {
     height: unset;
-    margin: 7em 0;
+    margin: 8vh 0;
     flex-direction: column;
     gap: 5vh;
     animation: magicAppear 0.75s ease-in-out 2.3s both;
@@ -159,11 +166,13 @@ sup {
     position: absolute;
     inset: 0;
     border-radius: 15px;
-    background: var(--bbl-gradient) border-box;
+    background-position: center center;
+    background: var(--bbl-gradient);
     border: 2px solid transparent;
     mask: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),linear-gradient(white,white);
     mask-composite: intersect;
     mask-clip: padding-box, border-box;
+    /* animation: rotatingGradient 2    0s linear infinite; */
 }
 
 .card-container .card .info {
@@ -234,6 +243,16 @@ button {
         opacity: 1.0;
     }
 }
+
+@keyframes rotatingGradient {
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+  
 
 @media screen and (max-width: 900px) {
     .app .present {
@@ -315,8 +334,8 @@ button {
     }
 
     .card-container .card .content img.fill {
-        top: calc(50% - 17.5vh);
-        left: calc(50% - 17.5vh);
-        height: 35vh;
+        top: calc(50% - 12.5vh);
+        left: calc(50% - 12.5vh);
+        height: 25vh;
     }
 }
