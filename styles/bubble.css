@@ -167,12 +167,12 @@ sup {
     inset: 0;
     border-radius: 15px;
     background-position: center center;
-    background: var(--bbl-gradient);
+    background: conic-gradient(from var(--gradient-angle), rgba(180,58,177,1), rgba(170,55,189,1), rgba(72,156,214,1), rgba(235,142,88,1), rgba(208,195,40,1), rgba(69,248,252,1), rgba(180,58,177,1));
     border: 2px solid transparent;
     mask: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),linear-gradient(white,white);
     mask-composite: intersect;
     mask-clip: padding-box, border-box;
-    /* animation: rotatingGradient 2    0s linear infinite; */
+    animation: rotatingGradient 20s linear infinite;
 }
 
 .card-container .card .info {
