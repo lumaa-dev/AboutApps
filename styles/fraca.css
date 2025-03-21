@@ -12,6 +12,7 @@ body.colored {
     opacity: 1;
     transform: scale(1.0);
     margin: -5vh;
+    z-index: 1;
 }
 
 .app .present *:not(img) {
@@ -59,7 +60,7 @@ body.colored {
 
 .card-container .card .content img {
     position: relative;
-    top: -5vh;
+    top: -15vh;
     left: calc(50% - 25vw);
     width: 50vw;
     height: unset;
@@ -67,8 +68,10 @@ body.colored {
     transition: 0.35s ease-out;
 }
 
-.card-container .card:hover .content img {
-    top: -20vh;
+.card-container .card .content img.wide {
+    width: 80vw;
+    top: 0;
+    left: calc(50% - 40vw);
 }
 
 .card-container .card .content .text {
@@ -82,11 +85,11 @@ body.colored {
     pointer-events: all;
 }
 
-.card-container .card:hover .content .text {
+/* .card-container .card:hover .content .text {
     opacity: 0;
     transform: translateY(-20vh);
     pointer-events: none;
-}
+} */
 
 .card-container .card .content .info {
     width: 70%;
@@ -115,9 +118,15 @@ body.colored {
     }
 
     .card-container .card .content img {
-        top: 20vh;
+        top: 3vh;
         left: calc(50% - 40vw);
         width: 80vw;
+    }
+
+    .card-container .card .content img.wide {
+        top: 30vh;
+        width: 95vw;
+        left: calc(50% - 47.5vw);
     }
 }
 
