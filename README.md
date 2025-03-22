@@ -6,7 +6,7 @@ Visit [apps.lumaa.fr](https://apps.lumaa.fr/) for more info
 - [**Bubble**](https://apps.lumaa.fr/app/bubble) - Light Mastodon client 
 - [NumMemory](https://d.lumaa.fr/nummemory) - Guess a number of your choice, but only once a day
 - [Artisticly](https://apps.lumaa.fr/app/artisticly) - Create your own music library, by scrapping songs off of Spotify or by upload songs yourself
-- [Fraca](https://d.lumaa.fr/fraca) - A French-Quebec bridge on all Apple devices / Un lien franco-québécois sur tous vos appareils Apple
+- [Fraca](https://apps.lumaa.fr/app/fraca) - A French-Quebec bridge on all Apple devices / Un lien franco-québécois sur tous vos appareils Apple
 - WidgAround - A fully customizable widget app for iOS
 - [**Record Link**](https://apps.lumaa.fr/app/recordlink) - Record Link is an upcoming service to allow every one to share music whatever the platform you use.
 - [Secret Project](https://apps.lumaa.fr/app/secret)...
@@ -19,7 +19,7 @@ Visit [apps.lumaa.fr/legal/threaded](https://apps.lumaa.fr/legal/threaded) to kn
 Learn more about the usage of [Artifical Intelligence](https://apps.lumaa.fr/legal/ai) in Lumaa's projects and his opinions on it.
 
 ## Extra
-The NumMemory and Fraca links use the [Desire Path](https://d.lumaa.fr/desirepath) redirection system.
+The NumMemory link use the [Desire Path](https://d.lumaa.fr/desirepath) redirection system.
 
 ## Excluded Content
 This repository contains the full website, except these elements:
