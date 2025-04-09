@@ -7,10 +7,18 @@ body.colored {
     background: var(--bg-gradient);
 }
 
+iframe {
+    animation: appearTxt 900ms ease-out 1300ms both;
+}
+
+.app .present {
+    margin-top: 3vh;
+}
+
 .app .present img {
     animation: appearImg 700ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 700ms both;
     opacity: 1;
-    transform: scale(1.0);
+    transform: scale(0.9);
     margin: -5vh;
     z-index: 1;
 }
@@ -128,6 +136,10 @@ body.colored {
         width: 95vw;
         left: calc(50% - 47.5vw);
     }
+
+    iframe {
+        display: none !important;
+    }
 }
 
 @keyframes appearImg {
@@ -137,7 +149,7 @@ body.colored {
     }
     100% {
         opacity: 1;
-        transform: scale(1.0);
+        transform: scale(0.9);
     }
 }
 

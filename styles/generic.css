@@ -91,6 +91,10 @@ input[type="text"]:focus, input[type="email"]:focus {
 	border: 7.5px var(--apple-blue-l) solid;
 }
 
+iframe {
+	margin: 3em;
+}
+
 .card-container {
 	width: 100vw;
 	display: flex;
