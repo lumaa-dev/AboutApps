@@ -5,6 +5,7 @@
 body.colored {
     padding-top: 5vh;
     background: var(--bg-gradient);
+    color: #fff;
 }
 
 iframe {

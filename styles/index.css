@@ -61,8 +61,12 @@
 }
 
 .app .icon {
-	width: 250px;
+	width: 200px;
 	border-radius: 22%;
+}
+
+.app .icon.br {
+	width: 250px !important;
 }
 
 .app .name {
@@ -117,7 +121,7 @@
 }
 
 .app-bento {
-	background: #1c1c1e;
+	background: #090912;
 	color: #fff;
 }
 
