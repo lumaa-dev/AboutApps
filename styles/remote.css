@@ -145,11 +145,11 @@ a.feature {
         border-bottom-left-radius: 0;
     }
 
-    .feature.horizon .title {
+    .feature .title {
         font-size: 1.6em;
     }
 
-    .feature.horizon p {
+    .feature p {
         font-size: 1em;
     }
 
