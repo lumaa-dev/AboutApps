@@ -16,7 +16,7 @@ Visit [apps.lumaa.fr/legal/privacy](https://apps.lumaa.fr/legal/privacy) and sel
 Visit [apps.lumaa.fr/legal/copyrights](https://apps.lumaa.fr/legal/copyrights) to know more about copyrighted content from Lumaa\
 Visit [apps.lumaa.fr/legal/threaded](https://apps.lumaa.fr/legal/threaded) to know more about the Threaded name change, due to a legal action from Instagram, LLC.
 
-Learn more about the usage of [Artifical Intelligence](https://apps.lumaa.fr/legal/ai) in Lumaa's projects and his opinions on it.
+Learn more about the usage of [Artifical Intelligence](https://apps.lumaa.fr/legal/ai) in Lumaa's projects and his opinions on it.\
 Learn more about Lumaa's [indirect affiliation](https://apps.lumaa.fr/legal/cider) with Cider Collective
 
 ## Extra
