@@ -9,6 +9,10 @@
 	text-align: center;
 }
 
+.title p {
+	margin: 0 1em;
+}
+
 .title p::first-line {
 	font-family: var(--apple-sf-bold);
 	font-weight: bold;
