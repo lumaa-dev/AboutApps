@@ -41,8 +41,21 @@ h1 {
     padding: 0 2vw;
 }
 
-.feature:hover {
-    box-shadow: 0 0 20px var(--accent);
+.console {
+    max-width: calc(60vw + 2px);
+    margin: 10vh 0 10vh calc(50vw - 30vw);
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.console > p {
+    font-weight: 800;
+    font-size: 3.5vw;
+    filter: blur(1.2px);
+    text-shadow: #00ff00 0 0 20px;
 }
 
 .feature {
@@ -50,6 +63,10 @@ h1 {
     border-radius: 20px;
     box-shadow: 0 0 0 transparent;
     transition: box-shadow 0.3s ease-out;
+}
+
+.feature:hover {
+    box-shadow: 0 0 20px var(--accent);
 }
 
 div.feature {
@@ -125,9 +142,13 @@ a.feature {
         display: none !important;
     }
 
-    div.feature {
+    div.feature, .console {
         max-width: calc(85vw + 2px);
         margin-left: calc(50vw - 42.5vw);
+    }
+
+    .console > p {
+        font-size: 5vw;
     }
 
     .feature img {
@@ -143,6 +164,10 @@ a.feature {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
+    }
+
+    .feature.horizon span {
+        width: 85vw;
     }
 
     .feature .title {
