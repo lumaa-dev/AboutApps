@@ -19,7 +19,7 @@ Visit [apps.lumaa.fr/legal/threaded](https://apps.lumaa.fr/legal/threaded) to kn
 Learn more about the usage of [Artifical Intelligence](https://apps.lumaa.fr/legal/ai) in Lumaa's projects and his opinions on it.\
 
 ## Extra
-- The NumMemory link use the [Desire Path](https://d.lumaa.fr/desirepath) redirection system.\
+- The NumMemory link use the [Desire Path](https://d.lumaa.fr/desirepath) redirection system.
 - Lumaa is affiliated to [Cider Collective](https://cider.sh/)
 
 ## Excluded Content
