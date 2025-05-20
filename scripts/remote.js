@@ -60,7 +60,7 @@ window.onload = () => {
         for (let i = 0; i < ia.length; i++) {
             setTimeout(() => {
                 const dex = ia[i];
-                let chars = "ANNOUNCEMENT COMING SOON";
+                let chars = "COMING TO THE APP STORE";
                 txtr = txtr.replaceAt(dex, chars[dex]);
                 element.innerText = txtr;
             }, 120*i);
