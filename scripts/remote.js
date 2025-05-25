@@ -38,7 +38,7 @@ window.onload = () => {
                 const index = ia[deli];
                 ia.splice(deli, 1);
                 
-                let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[{]}-_+\\/<>.*$@";
+                let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[{]}-_+\\/<>.*$@%~\"'=";
                 txtr = txtr.replaceAt(index, chars[Math.floor(Math.random() * chars.length)])
                 
                 element.innerText = txtr.substring(0, txt.length);
@@ -60,7 +60,7 @@ window.onload = () => {
         for (let i = 0; i < ia.length; i++) {
             setTimeout(() => {
                 const dex = ia[i];
-                let chars = "COMING TO THE APP STORE";
+                let chars = txt;
                 txtr = txtr.replaceAt(dex, chars[dex]);
                 element.innerText = txtr;
             }, 120*i);
