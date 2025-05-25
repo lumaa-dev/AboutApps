@@ -40,9 +40,6 @@
 <body class="colored">
     <div class="app">
         <a href="https://apps.lumaa.fr/" class="return">Return to the App Gallery</a>
-        <div class="present video">
-            <video src="../assets/videos/hero_remote.webm" autoplay></video>
-        </div>
 
         <div class="feature">
             <img src="../assets/images/cider/HeroBanner.jpg" alt="Update Banner" draggable="false"/>
@@ -83,7 +80,14 @@
         </div>
 
         <div class="feature horizon">
-            <video src="../assets/videos/control_feature.webm" autoplay loop></video>
+            <video autoplay loop muted playsinline>
+                <source 
+                    src="../assets/videos/control_feature.mov" 
+                    type='video/mp4; codecs="hvc1"'>
+                <source 
+                    src="../assets/videos/control_feature.webm" 
+                    type="video/webm">
+            </video>
             <span>
                 <p class="title">It goes faster and faster</p>
                 <p>Using iOS 18, you can add a Cider Remote action to toggle playback in an instant, in the Control Center, lock screen or Action button</p>
