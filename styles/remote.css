@@ -31,16 +31,6 @@ h1 {
     height: 60vh;
 }
 
-.app .present *:not(video) {
-    animation: appearTxt 900ms ease-out 1300ms both;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.app .present p {
-    padding: 0 2vw;
-}
-
 .console {
     max-width: calc(60vw + 2px);
     margin: 10vh 0 10vh calc(50vw - 30vw);
@@ -82,7 +72,7 @@ a.feature {
     padding: 13px 18px;
 }
 
-.feature img {
+.feature img, .feature video {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 60vw;
@@ -109,7 +99,7 @@ a.feature {
     margin-bottom: 20px;
 }
 
-.feature.horizon img {
+.feature.horizon img, .feature.horizon video {
     width: 20vw;
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
@@ -138,8 +128,9 @@ a.feature {
 }
 
 @media screen and (max-width: 900px) {
-    video {
-        display: none !important;
+    .app .present video {
+        width: 85vw;
+        height: unset;
     }
 
     div.feature, .console {
@@ -159,11 +150,11 @@ a.feature {
         flex-direction: column;
     }
 
-    .feature.horizon img {
-        width: 85vw;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
+    .feature.horizon img, .feature video {
+        width: 85vw !important;
+        border-top-left-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+        border-bottom-left-radius: 0 !important;
     }
 
     .feature.horizon span {
