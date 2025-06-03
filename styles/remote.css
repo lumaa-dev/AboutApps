@@ -60,9 +60,14 @@ h1 {
 }
 
 div.feature {
-    max-width: calc(60vw + 2px);
     margin-left: calc(50vw - 30vw);
+    max-width: calc(60vw + 2px);
+    padding-top: 15px;
     padding-bottom: 15px;
+}
+
+div.feature:has(img), div.feature:has(video) {
+    padding-top: 0;
 }
 
 div.feature:first-of-type {
