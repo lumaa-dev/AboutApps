@@ -22,11 +22,20 @@
 .text {
 	padding: 3em 15em;
 	text-align: justify;
+	font-size: 1.1vw;
 }
 
 .text h1 {
 	padding: 0.2em 0;
 	text-align: left;
+}
+
+.text img {
+	position: relative;
+	width: 30vw;
+	left: calc(50% - 15vw);
+	border-radius: 20px;
+	margin: 1em 2em;
 }
 
 .text .section {
@@ -100,6 +109,12 @@ hr {
 	.text {
 		padding: 1em 2em;
 		text-align: justify;
+		font-size: 2.2vw;
+	}
+
+	.text img {
+		width: 70vw;
+		left: calc(50% - 35vw);
 	}
 
 	.apps {
