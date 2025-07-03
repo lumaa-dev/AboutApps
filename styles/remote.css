@@ -9,7 +9,7 @@
 
 body.colored {
     padding-top: 5vh;
-    background: #0c0a09;
+    background: #000;
     color: #fff;
     font-family: "Figtree", var(--apple-sf), sans-serif;
 }
@@ -21,6 +21,30 @@ a {
 h1 {
     font-family: "Figtree", var(--apple-sf), sans-serif;
     padding: 20px 0;
+}
+
+.albums {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.anim {
+    animation: appearTxt 0.5s ease-out forwards;
+}
+
+.albums > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
 }
 
 .app .present {
@@ -49,6 +73,7 @@ h1 {
 }
 
 .feature {
+    background: #0c0a09;
     border: #ffffff30 1px solid;
     border-radius: 20px;
     box-shadow: 0 0 0 transparent;
@@ -137,6 +162,10 @@ a.feature {
 }
 
 @media screen and (max-width: 900px) {
+    .albums img {
+        width: 120px;
+    }
+
     .app .present video {
         width: 85vw;
         height: unset;

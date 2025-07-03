@@ -1,73 +1,93 @@
-var txt = "[UNKNOWN]"
+var web = {
+    prevMobile: false,
+}
 
 window.onload = () => {
-    /**@type {HTMLElement} */
-    const txtAnimate = document.querySelector(".console.animate > p");
-    txt = txtAnimate.innerText;
+    web.prevMobile = window.innerWidth < 1150;
+    prepareAlbums();
+}
 
-     setTimeout(() => {
-        obfuscate(txtAnimate);
-        setTimeout(() => {
-            deobfuscate(txtAnimate);
-        }, 1000*0.7 + 120 * 22);
-    }, 1000*0.7);
+window.onscroll = () => {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
 
-    setInterval(() => {
-        setTimeout(() => {
-            obfuscate(txtAnimate);
-            setTimeout(() => {
-                deobfuscate(txtAnimate);
-            }, 1000*0.7 + 120 * 22);
-        }, 1000*0.7);
-    }, (1000 * 0.7 + 120 * 23) * 2)
+    const scrollPercentage = scrollTop / (scrollHeight - window.innerHeight);
+    const albumsImg = document.querySelectorAll('.albums > img');
 
-    /**@param {HTMLElement} element */
-    function obfuscate(element) {
-        let l = element.innerText.length;
+    albumsImg.forEach((img, index) => {
+        let defOff = img.style.top;
+        const offset = (index + 1) * 10 + 10; 
+        img.style.transform = `translateY(-${scrollPercentage * offset}vh)`;
+    });
+}
 
-        /**@type {number[]} */
-        var ia = [];
-        for (let i = 0; i < l; i++) {
-            if (element.innerText[i] !== " ") ia.push(i);
-        }
+window.onresize = () => {
+    prepareAlbums(false);
+}
 
-        var txtr = element.innerText;
-        for (let i = 0; i < txtr.length; i++) {
-            setTimeout(() => {
-                let deli = Math.floor(Math.random() * ia.length)
-                const index = ia[deli];
-                ia.splice(deli, 1);
-                
-                let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[{]}-_+\\/<>.*$@%~\"'=";
-                txtr = txtr.replaceAt(index, chars[Math.floor(Math.random() * chars.length)])
-                
-                element.innerText = txtr.substring(0, txt.length);
-            }, 120*i)
-        }
-    }
+function shuffle(array) {
+    let currentIndex = array.length;
 
-    /**@param {HTMLElement} element */
-    function deobfuscate(element) {
-        let l = element.innerText.length;
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+        // Pick a remaining element...
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
 
-        /**@type {number[]} */
-        var ia = [];
-        for (let i = 0; i < l; i++) {
-            if (element.innerText[i] !== " ") ia.push(i);
-        }
-
-        var txtr = element.innerText;
-        for (let i = 0; i < ia.length; i++) {
-            setTimeout(() => {
-                const dex = ia[i];
-                let chars = txt;
-                txtr = txtr.replaceAt(dex, chars[dex]);
-                element.innerText = txtr;
-            }, 120*i);
-        }
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
     }
 }
 
-String.prototype.replaceAt = function(index, replacement) {
-    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+function prepareAlbums(force = true) {
+    let isMobile = window.innerWidth < 1150;
+    
+    if (web.prevMobile !== isMobile || force) {
+        const albumsContainer = document.querySelector('.albums');
+        albumsContainer.innerHTML = '';
+    } else {
+        return
+    }
+    web.prevMobile = isMobile;
+
+    var pad = (isMobile ? 90 : 230) / 2;
+    var amount = isMobile ? 4 : 5;
+
+    const albumsContainer = document.querySelector('.albums');
+
+    var albumImages = [
+        'america.png',
+        'around_fur.png',
+        'attitudes.png',
+        'avicii_forever.png',
+        'bbl.png',
+        'dttd.png',
+        'foulard_rouge.png',
+        'ginkgo.png',
+        'good_faith.png',
+        'in_rainbows.png',
+        'making_moves.png',
+        'numbers.png',
+        'ram.png',
+        'ruptures.png',
+        'stafad.png',
+        'the_doors.png',
+        'the_wall.png',
+        'zzccmxtp.png'
+    ];
+
+    shuffle(albumImages);
+    albumImages = albumImages.slice(0, amount);
+
+    albumImages.forEach(image => {
+        let idx = albumImages.indexOf(image);
+        let max = (idx / (albumImages.length - 1)) * 100
+        
+        const img = document.createElement('img');
+        img.src = `../assets/images/cider/tracks/${image}`;
+        img.style.left = `calc(${max}vw - ${Math.floor(Math.random() * 55 + pad)}px)`;
+        img.style.top = `${Math.floor(Math.random() * 70) + 5}vh`;
+        albumsContainer.appendChild(img);
+    });
 }

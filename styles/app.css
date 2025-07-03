@@ -158,6 +158,7 @@
 	border-radius: 15px;
 	gap: 15px;
 	padding: 30px 10px;
+	backdrop-filter: blur(10px);
 }
 
 .platform p {
@@ -228,6 +229,32 @@
 
 .lemmy .action {
 	background: #565656;
+}
+
+.github {
+	background: linear-gradient(hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 64%, 0.15));
+}
+
+.github p {
+	color: #fff;
+}
+
+.github .action {
+	background: #fff;
+	color: #000;
+}
+
+.twitter {
+	background: linear-gradient(rgba(29, 161, 242, 0.3), rgba(29, 161, 242, 0.15));
+}
+
+.twitter p {
+	background-color: rgba(167, 214, 243, 0.9);
+}
+
+.twitter .action {
+	background: #1da1f2;
+	color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
