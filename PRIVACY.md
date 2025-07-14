@@ -1,1 +1,0 @@
-Visit [apps.lumaa.fr/legal/privacy](https://apps.lumaa.fr/legal/privacy) and select an app for more info
