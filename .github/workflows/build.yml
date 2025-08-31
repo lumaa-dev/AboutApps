@@ -2,7 +2,7 @@ name: Build Vanilla
 on: [push]
 
 jobs:
-  build-vuejs:
+  build-vanilla:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
