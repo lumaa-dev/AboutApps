@@ -1,0 +1,29 @@
+name: Build Vanilla
+on: [push]
+
+jobs:
+  build-vuejs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Zip project
+        run: |
+          cd ${{ github.workspace }}
+          
+          mkdir website
+          cp -r app website/
+          cp -r assets website/
+          cp -r legal website/
+          cp -r scripts website/
+          cp -r styles website/
+          cp -r empty.html website/
+          cp -r index.html website/
+          cp -r map.html website/
+      - name: Upload dist folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: apps_lumaa_fr
+          path: website/
+          if-no-files-found: error
+          include-hidden-files: true
