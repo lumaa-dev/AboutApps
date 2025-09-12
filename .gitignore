@@ -1,22 +1,22 @@
 .DS_Store
-*.zip
+node_modules
+/dist
 
-# fonts
-assets/fonts
+# local env files
+.env.local
+.env.*.local
 
-# apple mocks
-assets/images/iphone_13.png
-assets/images/iphone_15_pro.png
-assets/images/ipad_pro.png
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# copyrighted content
-assets/images/byheart/sure-enough.jpeg
-assets/images/cider/tracks/
-assets/sf/
-
-# archives
-assets/images/archive
-
-# priv
-dev/
-legal/priv/*
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
