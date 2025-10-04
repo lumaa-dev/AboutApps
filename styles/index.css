@@ -1,176 +1,144 @@
-.present {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 35vh;
-	background: var(--apple-bg-tertiary-l);
+h1 {
+    text-align: center;
+    margin: 2em;
+    font-size: 3em;
 }
 
-.present img {
-	height: 15vh;
-	margin: 1em;
+.follower {
+    margin-top: 2em !important;
 }
 
-.present p {
-	font-family: var(--apple-sf-bold);
-	font-weight: bold;
-	font-size: 2em;
+.app-grid {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50vw - 20px));
+    gap: 10px;
+    grid-auto-rows: 50vh;
 }
 
-.apps {
-	width: 100vw;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+.app-grid .app {
+    grid-column: auto;
+    grid-row: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.apps .list {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	width: 60vw;
-	background: #00000015;
-	border-radius: calc(58.5px + 1.5em);
+.app-grid .app,
+.app-list .app {
+    border-radius: var(--rounded);
 }
 
-.apps h1 {
-	text-align: center;
-	font-size: 2.5em;
-	font-weight: 700;
-	padding: 2em 1em;
-	width: 100vw;
+.app-grid .app p {
+    font-size: 5vh;
+    font-weight: 700;
 }
 
-.app:not(.list .app) {
-	padding: 3em;
-	display: grid;
-	width: 48vw;
-	height: 50vh;
-	justify-content: center;
-	justify-items: center;
-	gap: 1em;
-	margin: 5px;
+.app-grid .app img {
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    /* border: 1px solid #ffffff18; */
 }
 
-.app.wide {
-	width: calc(48vw * 2 - 5px * 2 + 1em) !important;
+.app img {
+    border-radius: 22%;
 }
 
-.app .icon {
-	width: 200px;
-	border-radius: 22%;
-}
-
-.app .icon.br {
-	width: 250px !important;
-}
-
-.app .name {
-	font-size: 5vh;
-}
-
-.apps .list .app {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 2em;
-	width: unset;
-	padding: 3em;
-}
-
-.apps .list .app .name {
-	width: 35vw;
-}
-
-.apps .list .app a {
-	text-align: right;
-	width: calc(60vw - 35vw - 150px - 9em);
-}
-
-.apps .list .app .icon {
-	width: 150px;
-	height: 150px;
-}
-
-.cider {
-	background: #0c0a09;
-	color: #fff;
-}
-
-.cider a {
-	color: #e11d48;
+.app-grid .remote {
+    background: url("https://apps.lumaa.fr/assets/images/cider/HeroBanner.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    color: #fff;
 }
 
 .bubble {
-	background: linear-gradient(to bottom, #222222, #101010);
-	color: #fff;
-}
-
-.bubble .name {
-	font-weight: 700;
+    background: linear-gradient(to bottom, #222222, #101010);
+    color: #fff;
 }
 
 .fraca {
-	background: linear-gradient(to bottom right, rgb(112.2, 35.7, 22.95) 10%, black 30%, black 70%, rgb(15.3, 51, 102) 90%);
-	color: #fff;
+    background: linear-gradient(
+        to bottom right,
+        rgb(112.2, 35.7, 22.95) 10%,
+        black 30%,
+        black 70%,
+        rgb(15.3, 51, 102) 90%
+    );
+    color: #fff;
 }
 
-.app-bento {
-	background: #090912;
-	color: #fff;
+.app-list {
+    margin: 0 calc((50vw - 20px) / 2);
+    width: calc(50vw - 20px);
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 1440px) {
-	.apps .list {
-		width: 90vw;
-		border-radius: calc(17.6px + 1.5em);
-	}
-
-	.apps .list .app {
-		width: calc(100vw - 2em - 20px);
-		padding: 1em;
-		gap: 20px;
-	}
-
-	.apps .list .app .icon {
-		width: 80px;
-		height: 80px;
-	}
-
-	.apps .list .app .name {
-		font-size: 3vh;
-		width: 20vw;
-	}
-
-	.apps .list .app a {
-		width: calc(90vw - 20vw - 80px - 4em);
-	}
+.app-list .app:first-child {
+    border-top-left-radius: var(--rounded);
+    border-top-right-radius: var(--rounded);
 }
 
-@media screen and (max-width: 1100px) {
-	.app:not(.list .app) {
-		width: 100vw !important;
-		height: unset !important;
-	}
-
-	.app.wide:not(.list .app) {
-		width: 100vw !important;
-	}
+.app-list .app > span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
 }
 
-/* DARK MODE */
+.app-list .app {
+    border-radius: 0;
+    background: var(--apple-bg-secondary-l);
+    padding: 0.75em 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-list .app:last-child {
+    border-bottom-left-radius: var(--rounded);
+    border-bottom-right-radius: var(--rounded);
+}
+
+.app-list .app img {
+    width: 100px;
+    height: 100px;
+}
+
+.app-list .remote {
+    background: #0c0a09;
+}
+
+@media screen and (max-width: 1040px) {
+    .app-grid .app {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .app-grid .app img {
+        width: 180px;
+        height: 180px;
+        margin: 30px;
+    }
+
+    .app-list .app img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .app-list {
+        margin: 0 calc(20vw / 2);
+        width: calc(80vw - 20px);
+    }
+}
 
 @media (prefers-color-scheme: dark) {
-	.present {
-		background: var(--apple-bg-tertiary-d);
-	}
-
-	.apps .list {
-		background: #0000006a;
-	}
+    .app-list .app {
+        background: #171717;
+    }
 }

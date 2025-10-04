@@ -38,69 +38,83 @@
 </head>
 
 <body>
-	<div class="present">
-		<img src="https://lumaa.fr/static/hero_lumaa_white.svg" draggable="false">
-		<p><a href="https://lumaa.fr/">Lumaa</a>'s App Gallery</p>
+	<!-- Header section -->
+	<div class="present" style="display: flex; flex-direction: column; align-items: center; margin-top: 2em;">
+		<img src="./assets/images/lumaa_glass_icon.png" alt="Lumaa Icon" draggable="false"
+			style="width: 240px; height: 240px; margin-bottom: 1em;">
+		<p style="font-size: 2em; font-weight: bold;">Lumaa's App Gallery</p>
 	</div>
-	<div class="apps">
-		<h1>Released Apps</h1>
+
+	<!-- Featured apps grid -->
+	<div class="app-grid follower">
 		<div class="app bubble">
-			<p class="name">Bubble v2</p>
-			<img class="icon br" src="./assets/images/bubble/BubbleGlass_transparent.png" alt="Bubble Icon" draggable="false" />
+			<p>Bubble</p>
+			<img src="./assets/images/bubble/BubbleGlass_transparent.png" alt="Bubble App" draggable="false" />
 			<a href="./app/bubble">Learn more!</a>
 		</div>
-		<div class="app cider">
-			<img class="icon" src="./assets/images/cider_remote.png" alt="Cider Remote Icon" draggable="false">
-			<p class="name">Remote</p>
+		<div class="app remote">
+			<p>Remote</p>
+			<img src="./assets/images/cider_remote.png" alt="Remote App" draggable="false" />
 			<a href="./app/remote">Learn more...</a>
 		</div>
 		<div class="app fraca">
-			<p class="name">Fraca</p>
-			<img class="icon br" src="./assets/images/fraca/icon.png" alt="Fraca Icon" draggable="false" />
+			<p>Fraca</p>
+			<img src="./assets/images/fraca/icon.png" alt="Fraca App" draggable="false" />
 			<a href="./app/fraca">Read more</a>
 		</div>
 		<div class="app app-bento">
-			<img class="icon" src="./assets/images/tictac/icon.png" alt="TicTac Icon" draggable="false" />
-			<p class="name">TicTac</p>
+			<p>TicTac</p>
+			<img src="./assets/images/tictac/icon.png" alt="TicTac App" draggable="false" />
 			<a href="./app/tictac">Learn more...</a>
 		</div>
-		<h1>Work in Progress</h1>
-		<span class="list">
-			<div class="app">
-				<img class="icon" src="./assets/images/recordlink/app_icon.jpg" alt="Record Link" draggable="false" />
-				<p class="name">Record Link</p>
-				<a href="./app/recordlink">Learn more...</a>
-			</div>
-			<div class="app">
-				<img class="icon" src="./assets/images/app_icon_missing.png" alt="WidgAround Icon" draggable="false" />
-				<p class="name">WidgAround</p>
-				<a href="https://techhub.social/@lumaa/113214624051110745">Sneak peek</a>
-			</div>
-		</span>
-		<h1>Leftout Projects</h1>
-		<span class="list">
-			<div class="app">
-				<img class="icon" src="./assets/images/nummemory.png" alt="NumMemory Icon" draggable="false" />
-				<p class="name">NumMemory</p>
-				<a href="https://d.lumaa.fr/nummemory">App Store</a>
-			</div>
-			<div class="app">
-				<img class="icon" src="./assets/images/app_icon_missing.png" alt="Unknown Icon" draggable="false" />
-				<p class="name">Coli</p>
-				<a href="./app/coli">Discover...</a>
-			</div>
-			<div class="app">
-				<img class="icon" src="./assets/images/artisticly/icon.jpg" alt="Artistcly Icon" draggable="false" />
-				<p class="name">Artisticly</p>
-				<a href="./app/artisticly">Discontinued.</a>
-			</div>
-			<div class="app">
-				<img class="icon" src="./assets/images/byheart/hero-icon.png" alt="ByHeart Icon" draggable="false" />
-				<p class="name">ByHeart</p>
-				<a href="./app/byheart">Discontinued.</a>
-			</div>
-		</span>
 	</div>
+
+	<h1>Other apps</h1>
+	<div class="app-list">
+		<div class="app">
+			<span>
+				<img src="./assets/images/recordlink/app_icon.jpg" alt="Record Link App" draggable="false" />
+				<p>Record Link</p>
+			</span>
+			<a href="./app/recordlink">Learn more...</a>
+		</div>
+		<div class="app">
+			<span>
+				<img src="./assets/images/app_icon_missing.png" alt="WidgAround App" draggable="false" />
+				<p>WidgAround</p>
+			</span>
+			<a href="https://techhub.social/@lumaa/113214624051110745">Sneak peek</a>
+		</div>
+		<div class="app">
+			<span>
+				<img src="./assets/images/nummemory.png" alt="NumMemory App" draggable="false" />
+				<p>NumMemory</p>
+			</span>
+			<a href="https://d.lumaa.fr/nummemory">App Store</a>
+		</div>
+		<div class="app">
+			<span>
+				<img src="./assets/images/app_icon_missing.png" alt="Coli App" draggable="false" />
+				<p>Coli</p>
+			</span>
+			<a href="./app/coli">Discover...</a>
+		</div>
+		<div class="app">
+			<span>
+				<img src="./assets/images/artisticly/icon.jpg" alt="Artisticly App" draggable="false" />
+				<p>Artisticly</p>
+			</span>
+			<a href="./app/artisticly">Discontinued.</a>
+		</div>
+		<div class="app">
+			<span>
+				<img src="./assets/images/byheart/hero-icon.png" alt="ByHeart App" draggable="false" />
+				<p>ByHeart</p>
+			</span>
+			<a href="./app/byheart">Discontinued.</a>
+		</div>
+	</div>
+
 	<div class="footer">
 		<p>All rights reserved. Lumaa is not affiliated with Apple Inc, or with Cider Collective.</p>
 		<p
